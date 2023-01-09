@@ -1,0 +1,14 @@
+.footer-main {
+    width: calc(100% - 200px);
+    padding: 20px 100px 20px 100px;
+
+}
+
+.footer-main>div {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid var(--dark-brown);
+    border-bottom: 1px solid var(--dark-brown);
+    color: var(--light-brown);
+}

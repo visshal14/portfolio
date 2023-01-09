@@ -1,0 +1,244 @@
+.homeDiv {
+    /* height: calc(100vh-70px); */
+    padding-top: 70px;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.homeLeftPartition {
+    width: 50%;
+    /* height: 100%; */
+    /* border: 1px solid black; */
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.homeNameNDes {
+    color: var(--dark-brown);
+    margin-bottom: 30px;
+}
+
+.homeName {
+    font-size: 100px;
+}
+
+.homeName>span {
+    font-weight: 700;
+}
+
+.homeDes {
+    font-size: 25px;
+}
+
+.homeLangBtn {
+    margin-left: -10px;
+}
+
+.homeLangBtn>button {
+    color: var(--background-main);
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 5px 10px;
+    background-color: var(--light-brown);
+    border: transparent;
+    border-radius: 4px;
+}
+
+.xdBtn {
+    background-color: var(--dark-brown) !important;
+}
+
+
+
+
+
+
+
+
+.homeRightPartition {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.rightImg {
+    max-height: 100%;
+    /* width: 100%; */
+    max-width: 100%;
+    /* width: 200%; */
+    transform: scale(1.2);
+    margin-top: -150px;
+    margin-left: 150px;
+}
+
+
+
+
+
+
+
+
+.homeP {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-left: 100px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.homePhotoBase {
+    height: 250px;
+    width: 500px;
+    position: relative;
+    transform: scale(1.2);
+}
+
+.homePhotoBase>img {
+    /* height: 100%; */
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+}
+
+.homePhotoBrownP {
+    position: absolute;
+    transform: rotate(320deg);
+    transform-origin: 125px 125px;
+    height: 250px;
+    width: 300%;
+    border-radius: 500px 0 0 500px;
+    background-color: var(--light-brown);
+}
+
+.expDiv {
+
+    position: absolute;
+    background-color: var(--light-brown);
+    padding: 10px 20px;
+    color: var(--background-main);
+    border-radius: 7px;
+    bottom: 15px;
+    left: -80px;
+
+    /* right: -50px; */
+
+}
+
+.expDiv>span {
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .homePhotoBase {
+        transform: scale(1.1);
+    }
+
+    .homeName {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 1036px) {
+    .homeName {
+        font-size: 60px;
+    }
+
+    .homeLangBtn>button {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    .homePhotoBase {
+        transform: scale(1);
+    }
+
+    .homeLeftPartition {
+        padding: 70px 50px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .homePhotoBase {
+        transform: scale(0.9);
+
+    }
+
+    .homeLeftPartition {
+        padding: 70px 50px;
+    }
+
+    .homeLangBtn>button {
+        padding: 5px 15px;
+    }
+
+    .homeP {
+        padding-left: 50px;
+    }
+
+    .homeDes {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .homeName {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .homePhotoBase {
+        transform: scale(0.8);
+    }
+
+    .homeP {
+        padding-left: 30px;
+    }
+
+    .homeDes {
+        font-size: 15px;
+    }
+
+    .homeName {
+        font-size: 40px;
+    }
+
+    .homeLeftPartition {
+        padding: 50px 20px 100px 50px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .homeLeftPartition {
+        width: 100%;
+        order: 2;
+        padding: 100px;
+    }
+
+    .homeRightPartition {
+        width: 100%;
+        height: 50%;
+    }
+
+    .homeDiv {
+        height: 100vh;
+        flex-wrap: wrap;
+    }
+
+    .homeP {
+        padding-left: 75px;
+        margin-top: 70px;
+    }
+
+    .homeLeftPartition {
+        padding: 20px 50px 100px 50px;
+    }
+}

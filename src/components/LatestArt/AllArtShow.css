@@ -1,0 +1,42 @@
+.AAS-main {
+
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: calc(100% - 100px);
+}
+
+.AAS-main::-webkit-scrollbar {
+    display: none;
+}
+
+.AASMedia {
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.AASMedia:hover {
+    transform: scale(1.2);
+    z-index: 4;
+}
+
+
+.AAS-Column {
+    width: calc(33% - 4px);
+    height: auto;
+    padding: 0 2px;
+    min-width: 0;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .AAS-Column {
+        width: calc(50% - 4px);
+    }
+}

@@ -1,0 +1,109 @@
+.achieve-main {
+    height: calc(100vh - 150px);
+    width: calc(100% - 200px);
+    padding: 100px 100px 50px 100px;
+    position: relative;
+
+}
+
+.achieve-top-div {
+    font-size: 70px;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+.achieve-content-div {
+    margin-right: 40%;
+    z-index: 2;
+    position: inherit;
+}
+
+.achieve-content-div>p {
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--dark-brown);
+}
+
+.achieve-content-div>p:nth-child(3) {
+    margin-bottom: 0 !important;
+}
+
+.achieve-content-div>div {
+    padding: 20px;
+    font-size: 20px;
+    color: var(--light-brown);
+    background-color: var(--close-white);
+    border-radius: 9px;
+}
+
+.achieve-main>img {
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    max-height: 70vh;
+    max-width: 100%;
+    z-index: 1;
+}
+
+
+.achieve-content-div>div::selection {
+    color: black !important;
+}
+
+@media only screen and (max-width: 945px) {
+    .achieve-main {
+        width: calc(100% - 100px);
+        height: calc(100% - 150px);
+        padding: 100px 50px 50px 50px;
+    }
+
+    .achieve-top-div {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+
+    .achieve-content-div {
+        margin-right: 30%
+    }
+
+    .achieve-content-div>p {
+        font-weight: 600;
+        font-size: 20px;
+        color: var(--dark-brown);
+    }
+
+    .achieve-content-div>div {
+        padding: 20px;
+        font-size: 17px;
+        color: var(--light-brown);
+        background-color: var(--close-white);
+        border-radius: 9px;
+    }
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    .achieve-content-div>p {
+        font-weight: 600;
+        font-size: 23px;
+        color: var(--dark-brown);
+    }
+
+    .achieve-top-div {
+        font-size: 45px;
+    }
+
+    .achieve-content-div {
+        margin-right: 0
+    }
+
+    .achieve-content-div>div {
+        padding-left: 20px;
+        font-size: 17px;
+        color: var(--light-brown);
+    }
+
+}

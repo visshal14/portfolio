@@ -1,0 +1,160 @@
+.contact-main {
+    min-height: calc(100vh - 300px);
+    width: calc(100% - 200px);
+    padding: 200px 100px 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+
+.contact-left,
+.contact-right {
+    width: 50%;
+    height: 100%;
+}
+
+.contact-form {
+    padding: 50px 50px 50px 0;
+}
+
+.contact-right {
+    padding-top: 50px;
+}
+
+.contact-form>input {
+    margin-bottom: 20px;
+    width: calc(100% - 55px);
+    height: 30px;
+    border: 1px solid var(--dark-brown);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.contact-form>textarea {
+    margin-bottom: 20px;
+    width: calc(100% - 55px);
+    /* height: 30px; */
+    border: 1px solid var(--dark-brown);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.contact-form>button {
+    color: var(--background-main);
+    background-color: var(--light-brown);
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid var(--dark-brown);
+    padding: 10px 20px;
+}
+
+
+.contact-right-heading {
+    font-size: 50px;
+    color: var(--dark-brown);
+    margin-bottom: 20px;
+}
+
+.contact-right-heading>span {
+    color: var(--light-brown);
+
+}
+
+.contact-right-paragraph {
+    font-size: 20px;
+    color: var(--light-brown);
+}
+
+
+.contact-right-paragraph>p>a {
+    text-decoration: none;
+    color: var(--dark-brown) !important;
+}
+
+.contact-details {
+    position: absolute;
+    bottom: 50px;
+    width: calc(100% - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-details>a {
+    color: var(--dark-brown) !important;
+    background-color: var(--close-white);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin: 10px;
+}
+
+.contact-details>a:hover {
+    transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 945px) {
+    .contact-main {
+        width: calc(100% - 100px);
+        padding: 200px 50px 100px 50px;
+    }
+
+    .contact-details {
+        width: calc(100% - 100px);
+    }
+
+
+}
+
+@media only screen and (max-width: 801px) {
+    .contact-main {
+        min-height: calc(100vh - 200px);
+        padding: 100px 50px 100px 50px;
+
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .contact-left {
+        order: 2;
+    }
+
+    .contact-form {
+        padding: 20px 0;
+    }
+
+    .contact-right {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-right-heading {
+        font-size: 30px;
+
+    }
+
+    .contact-right-paragraph {
+        font-size: 17px;
+
+    }
+
+    .contact-form>input {
+
+        font-size: 13px;
+    }
+
+    .contact-form>textarea {
+        font-size: 13px;
+    }
+}
