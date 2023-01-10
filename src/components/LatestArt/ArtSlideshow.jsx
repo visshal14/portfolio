@@ -3,7 +3,7 @@ import "./ArtSlideshow.css"
 import { ArrowBackIosRounded, ArrowForwardIosRounded } from '@mui/icons-material';
 
 const ArtSlideshow = ({ designsList }) => {
-
+    // console.log(designsList)
     const [slideCount, setSlideCount] = useState({
         first: 0,
         second: 1,

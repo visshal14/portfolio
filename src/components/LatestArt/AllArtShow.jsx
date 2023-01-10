@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import "./AllArtShow.css"
 
 const AllArtShow = ({ designsList }) => {
-
+    // console.log(designsList)
     const [AAWidth, setAAWidth] = useState(window.innerWidth)
     const tempWidth = useRef(window.innerWidth)
 
