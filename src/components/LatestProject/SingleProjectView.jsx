@@ -46,14 +46,11 @@ const SingleProjectView = ({ data, hideFun }) => {
             <div className='SProject-photo-Name-div'>
                 <div className='SProject-photo-div'>
                     <span onClick={() => showPlus(-1)}><ArrowBackIosRounded /></span>
-                    {data.photos.map((el, i) =>
+                    {data?.photos?.map((el, i) =>
                         <img id={"media" + i} className="SPMedia" key={i} src={`https://drive.google.com/uc?id=${el}`} alt="p" />
                     )}
-                    {(data.videos === "") ? "" : data.videos.map((el, i) => (
+                    {(data?.videos === "") ? "" : data.videos?.map((el, i) => (
                         <iframe className="SPMedia" key={i} id={"media" + (i + data.photos.length)} src={"https://www.youtube.com/embed/" + el} width="560" height="315" title="YouTube video player" autoPlay allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        // <video className="SPMedia" key={i} id={"media" + i + data.photos.length} autoPlay>
-                        //     <source src="https://www.youtube.com/embed/PTvZFiqeEno" type="video/mp4" />
-                        // </video>
                     ))}
                     <span onClick={() => showPlus(1)}><ArrowForwardIosRounded /></span>
                 </div>

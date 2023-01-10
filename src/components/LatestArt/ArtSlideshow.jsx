@@ -74,6 +74,7 @@ const ArtSlideshow = ({ designsList }) => {
                 }
             }
         }, 1000)
+        // eslint-disable-next-line
     }, [slideCount])
 
     window.addEventListener("resize", () => {
@@ -133,12 +134,14 @@ const ArtSlideshow = ({ designsList }) => {
         }
     }
 
+
+
     return (
         <div className='AS-main'>
             <span onClick={() => showPlus(-1)}><ArrowBackIosRounded /></span>
             <div className='AS-photo-div'>
                 {designsList.map((el, i) => (
-                    <img onMouseMove={() => { imgHover(i) }} onMouseOut={() => { imgHover("over") }} id={"ASMedia" + i} className="ASMedia" key={i} src={`https://drive.google.com/uc?id=${el}`} alt="p" />
+                    <img onMouseMove={() => { imgHover(i) }} onMouseOut={() => { imgHover("over") }} id={"ASMedia" + i} className="ASMedia" key={i} src={`https://drive.google.com/uc?id=${el.URL}`} alt="p" />
                 ))}
             </div>
             <span onClick={() => showPlus(1)}><ArrowForwardIosRounded /></span>
